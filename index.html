@@ -1,0 +1,157 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Travel</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, minimum-scale=1, user-scalable=yes">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lora:400i|Open+Sans|Fjalla+One');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            background: url(./imgs/bg.jpg) no-repeat center 95%;
+            max-width: 100%;
+            color: white;
+            min-height: 100vh;
+        }
+
+         nav  {
+            position: relative;
+            max-width: 100%;
+            width: 100%;
+            margin: 0px;
+            display: inline-block;
+            background-color: rgba(15, 10, 10, 0.623);
+            
+        }
+        nav  ul {
+            list-style: none;
+            text-align: right;
+            
+        }
+        nav  li {
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .container {
+            position: absolute; 
+            top: 300px; 
+            right: 0; 
+            width: 70%;
+            margin-right: 20ch
+        }
+
+       .btn {
+             background-color :rgb(240, 82, 61);
+             color: white;
+             padding: 3px 20px;
+             margin: 40px;
+             border: none;
+             cursor: pointer;
+             width: 150px;
+        }
+        input,select {
+             width: 20%;
+             padding: 3px;
+             border: 1px ;
+             border-radius: 5px;
+             box-sizing: border-box;
+             margin-bottom: 10px;
+             margin: 0px 20px;
+             resize: vertical;    
+       }
+
+        a {
+            padding: 8px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 2px;
+            text-decoration: none;
+            display: inline-block;
+            color: white;
+        }
+
+        main {
+            margin: 40px auto 0;
+            text-align: center;
+        }      
+    
+        h3,h4 {
+            margin: 10px;
+        }
+
+        h3 {
+            font-size: 35pt;
+            font-family: cursive;
+            text-transform: uppercase;
+            
+        }
+
+        h4 {
+            font-size: 20pt;
+            text-transform: capitalize;
+        }
+
+        .nice-font {
+            font-family: "Lora";
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a></li>
+                <li>
+                    <a href="#">Lifestyle</a></li>
+                <li>
+                    <a href="#">Tours</a></li>
+                <li>
+                    <a href="#">Booking</a></li>
+                <li>
+                    <a href="#">Distination</a></li>
+                <li>
+                    <a href="#">Souvenirs</a></li>
+                <li>
+                    <a href="#">Blog</a></li>                               
+            </ul>
+        </nav>
+        <main>
+            <h3>
+                Where do you wnat to go ?
+            </h3>
+           
+            <h4 class="nice-font">
+                Trips, experiences, and palces. All in one service.
+            </h4>
+        </main>
+       
+        </div>
+         <div class="container">
+            <form name="q" method="get" action="https://travel.com">
+         
+              <input type="text" id="destintion" name="destintion" placeholder="Destintion, city">
+                      
+              <input type="text" id="Month" name="month" placeholder="Month">
+                    
+              <select id="trip" name="trip">
+                    <option value="Car Trip">Car Trip</option>
+                    <option value="Walk Trip>">Walk Trip</option>
+                    <option value="Bicycle Trip">Bicycle Trip</option>
+                  </select>
+              <button type="submit" class="btn">search</button>
+            </form>
+        
+        </div>          
+           
+</body>
+
+</html>
